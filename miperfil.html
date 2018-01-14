@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Senior Game</title>
+	<link rel="shortcut icon" type="text/css" href="assets/images/logo-01.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+	<section>
+		<nav>
+			<div class="row nav-wrapper side-nav white">
+				<div class="col s2 xl2">
+					<a href="#" class="brand-logo"><img src="assets/images/logo-inicio.png" alt="" class="img-logo"></a>
+				</div>
+				<div class="col s4 xl4 hide-on-small-only">
+					<form class="row" action="">
+						<div class="col xl10">
+							<input id="input-search" placeholder="Buscar en Senior Game">
+						</div>
+						<div class="col xl2">
+							<button class="teal btn-search">search</button>
+						</div>						
+					</form>
+				</div>
+				<div class="col s2 xl2 valign-wrapper perfil hide-on-small-only">
+					<img class="responsive-img circle img-perfil"src="assets/images/perfil.jpg" alt="">
+					<h5 class="name-perfil black-text">Carmen</h5>
+				</div>
+				<div class="col s4 xl4">
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="#!" class="teal-text">Inicio</a></li>
+						<li id="btn-game"><a href="#!" class="teal-text">Juegos</a></li>
+						<li><a href="#!" class="teal-text">Amigos</a></li>
+						<li><a href="#!" class="teal-text">Cerrar Sesión</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<section class="grey lighten-4 muro">
+		<div class="row">
+			<div class="col s12 offset-xl2 xl8 offset-xl2 white">
+				<img class="responsive-img circle img-muro"src="assets/images/perfil.jpg" alt="">
+				<form action="" class="form-muro">
+					<input placeholder="¿Qué estas pensando?" id="input-text" type="text" class="validate">
+					<a class="waves-effect waves-light teal btn modal-trigger" href="#modal1">Foto</a>
+					<a id="btn-send" class="waves-effect waves-light teal btn">Publicar</a>
+				</form>
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<h4>Modal Header</h4>
+						<p>A bunch of text</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- div vacio en donde irá las publicaciones o fotos del usuario -->
+		<div class="row" id="texto"> </div>
+
+
+		<div class="row">
+			<div class="col s12 offset-xl2 xl8 offset-xl2 white valign-wrapper" id="content-2">
+				<img class="responsive-img circle img-muro2"src="assets/images/perfil-2.jpg" alt="">
+				<h6 class="name-perfil-2">Raúl Mardones</h6>
+			</div>
+			<div class="col s12 offset-xl2 xl8 offset-xl2 white">
+				<p>Al fin pase el juego!!</p>
+				<img class="responsive-img img-post" src="assets/images/bingo.jpg" alt="">
+				<div class="row" id="box">
+					<div class="col s2 xl1">
+						<img class="responsive-img circle img-comentario"src="assets/images/perfil.jpg" alt="">
+					</div>
+					<div class="col s9 xl10" id="cont">
+						<input id="input-coment2" type="text" placeholder="Escribe un comentario...">
+					</div>
+					<div class="col s1 xl1" id="cont-1">
+						<button class="btn waves-effect btn-send"><i class="material-icons">chat</i></button>
+					</div>
+				</div>
+			</div>
+		</div>							
+		<div class="row">
+			<div class="col s12 offset-xl2 xl8 offset-xl2 white valign-wrapper" id="content-4">
+				<img class="responsive-img circle img-muro2"src="assets/images/perfil-3.jpg" alt="">
+				<h6 class="name-perfil-2">Luz Soto</h6>
+			</div>	
+			<div class="col s12 offset-xl2 xl8 offset-xl2 white">
+				<p>¿Quién quiere jugar un partido?</p>
+				<img class="responsive-img img-post" src="assets/images/juego.jpg" alt="">
+				<div class="row" id="box">
+					<div class="col s2 xl1">
+						<img class="responsive-img circle img-comentario"src="assets/images/perfil.jpg" alt="">
+					</div>
+					<div class="col s9 xl10" id="cont">
+						<input id="input-coment2" type="text" placeholder="Escribe un comentario...">
+					</div>
+					<div class="col s1 xl1" id="cont-1">
+						<button class="btn waves-effect btn-send"><i class="material-icons">chat</i></button>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+	<script>      
+    // Initialize Firebase
+    var config = {
+    	apiKey: "AIzaSyCuT2s4oJcp4P4CJf2FkLs4uKhshMCab4A",
+    	authDomain: "redsocial-1.firebaseapp.com",
+    	databaseURL: "https://redsocial-1.firebaseio.com",
+    	projectId: "redsocial-1",
+    	storageBucket: "redsocial-1.appspot.com",
+    	messagingSenderId: "867360204179"
+    };
+    firebase.initializeApp(config);
+	</script>
+	
+</body>
+</html>

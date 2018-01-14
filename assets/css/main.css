@@ -1,0 +1,118 @@
+/* inicio de aplicación splash ====================================================================== */
+#splash{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+#splash img{
+    position: absolute;
+    width: 90%;
+    top: 35%;
+    left: 6%;
+}
+/* Sign up Log in ====================================================================== */
+.logo-registry{
+    width: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.logo-registry-2{
+    width: 70%;
+    margin-top: 40%;
+    margin-bottom: 5%;
+} 
+#sign-up{
+    display: none;
+}
+/* inicio  ====================================================================== */
+#menu{
+    padding: 0;
+}
+.img-logo{
+    width: 4.5em;
+    margin-top: 7%;
+    margin-left: 7%;
+}
+#input-search{
+    border: solid 1px #e0dede;
+    border-radius: 0.5em;
+    padding-left: 1em;
+    margin-top: 2%;
+}
+.btn-search{
+    border: none;
+    border-radius: 0.5em;
+    margin-top: 15%;
+    height: 3em;
+    color: white;
+}
+.img-perfil{
+    width: 20%;
+    margin-left: 90%;
+}
+.name-perfil{
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 4%;
+}
+.perfil{
+    margin-top: 1%;
+}
+/* Muro de noticias =========================================================================================*/
+.img-muro{
+    width: 3em;
+    margin-bottom: 4%;
+    
+}
+#input-text{
+    border: solid 1px #e0dede;
+    border-radius: 0.5em;
+    width: 100%;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+.form-muro{
+    display: inline-block;
+    width: 90%;
+}
+.img-muro2{
+    width: 3em;
+    margin-top: 2%;
+}
+.name-perfil-2{
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 2%;
+}
+.post{
+    display: block;
+}
+.img-comentario{
+    width: 2.5em;
+    padding-top: 2%;
+   
+}
+.btn-send{
+    height: 3em;
+    width: 100%;
+}
+#none{
+    display: none;
+}
+.img-post{
+    padding: 5%;
+}
+#input-coment,#input-coment2{
+    border: solid 1px #e0dede;
+    border-radius: 0.5em;
+    width: 100%;
+}
+#box{
+    padding: 0 10% 0 0%;
+}
+#cont, #cont-1{
+    padding: 0;
+}
