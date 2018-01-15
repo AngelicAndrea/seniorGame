@@ -5,6 +5,11 @@ $(document).ready(function(){
            $('#splash').fadeOut(500);
         }, 2000);
      });
+
+// desaparecer sesiones que no son de la página de inicio
+
+$('#games').hide();
+
 // función click sign up / log in ====================================================================================
 
 $("#btn-sing-up").on("click",function(){ //hacer click en el boton de sign up se ejecuta las siguientes instrucciones
@@ -92,3 +97,22 @@ $(document).ready(function(){
     $('.modal').modal();
 });
 
+// función al hacer click en juegos ==================================================================================
+
+$("#btn-inicio").on("click",function(){ //hacer click en el boton de sign up se ejecuta las siguientes instrucciones
+    $("#games").hide();
+    $(".muro").show();
+})
+// función al hacer click en inicio ==================================================================================
+
+$("#btn-game").on("click",function(){ //hacer click en el boton de sign up se ejecuta las siguientes instrucciones
+    $(".muro").hide();
+    $("#games").show();
+})
+
+// finción al hacer click en el logo ===============================================================
+
+$("#img-inicio").on("click",function(){ //hacer click en el boton de sign up se ejecuta las siguientes instrucciones
+    $(".muro").show();
+    $("#games").hide();
+})
